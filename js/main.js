@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
           showeNone(correctBox);
         }, 1000);
-      } else {  
+      } else if(el.target.classList[0] === 'answer-box') {  
         showeBlock(errBox);
 
         setTimeout(function() {
